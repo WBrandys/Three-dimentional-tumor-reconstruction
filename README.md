@@ -27,9 +27,10 @@ To run the `reconstruction.py` script on a specific imaging series (axial (trans
 with open('images/name_of_the_series/_annotations.coco.json', 'r') as file:
     data = json.load(file)
 ```
-Replace `name_of_the_series` with the appropriate folder name (for ezample mysz_1_axial or mysz_1_coronal) corresponding to chosen dataset.
+Replace `name_of_the_series` with the appropriate folder name (for egzample mysz_1_axial or mysz_1_coronal) corresponding to chosen dataset.
 The script will load the annotations file, generate binary masks than perform linear interpolation and the 3D volume reconstruction using the Marching Cubes algorithm and PyVista visualization.
 
+To perform linear interpolation I modified the script from: [https://github.com/bnsreenu/python_for_microscopists/blob/master/Tips_and_Tricks_50_interpolate_images_in_a_stack.ipynb]
 
 
 
